@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Payclock — Make your time count</title><!-- inline-style --><style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#263c35;background:#f5f7f3;font-synthesis:none}*{box-sizing:border-box}body{margin:0}header{max-width:1160px;margin:auto;height:104px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid #e1e6df}.brand{text-decoration:none;color:#203d31;font-family:Manrope,sans-serif;font-weight:800;font-size:27px;letter-spacing:-1.2px;display:flex;align-items:center;gap:10px}.logo{background:#284e3d;color:#fff;border-radius:12px;font-size:30px;width:38px;height:38px;display:grid;place-items:center;line-height:1}.brand-dot{color:#8daa71;margin-left:-10px}.header-note{font-size:10px;letter-spacing:2px;color:#849087;font-weight:600}main{max-width:1160px;padding:60px 40px 0;margin:auto}.intro{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px}.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:700;color:#7d8f81}h1{font-family:Manrope,sans-serif;font-size:38px;font-weight:600;letter-spacing:-1.6px;margin:14px 0 12px}.subtitle{color:#7b877e;font-size:14px;margin:0}.date{font-size:12px;color:#8a958b;padding-top:40px}.dashboard{display:grid;grid-template-columns:1.65fr 1fr;gap:22px}.card{border-radius:20px;border:1px solid #e0e6da}.tracker{background:#eaf0e2;position:relative;padding:30px 36px;text-align:center;overflow:hidden}.tracker:after{content:'';width:280px;height:280px;border:1px solid #dbe5ce;position:absolute;border-radius:50%;top:78px;right:-200px;pointer-events:none}.tracker-top{display:flex;align-items:center;justify-content:space-between}.status{font-size:11px;border-radius:30px;background:#f6f8f2;padding:7px 11px;color:#7a8b74}.status.running{color:#315c34;background:#d5e5c5}.amount{font-family:Manrope,sans-serif;font-size:76px;font-weight:600;letter-spacing:-4px;margin:38px 0 2px;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.amount-caption{color:#8a9581;font-size:12px;margin-top:6px}.amount-caption span{margin:0 8px}.timer{display:flex;justify-content:center;align-items:center;gap:9px;margin:27px 0;color:#425d46;font-size:16px;font-variant-numeric:tabular-nums}.timer-dot{width:6px;height:6px;background:#9eb584;border-radius:50%}.timer-label{font-size:11px;color:#8a9683;margin-left:4px}.actions{display:flex;justify-content:center;gap:10px}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:10px;font-size:12px;padding:15px 20px;font-weight:600}.primary{background:#2f513c;color:#fff;min-width:164px}.primary:hover{background:#24432f}.secondary{border:1px solid #d2dbc9;background:transparent;color:#6e8068}.secondary:hover{background:#dce6d2}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #99af7b;outline-offset:3px}.saved-note{font-size:10px;color:#8d9985;margin:24px 0 0}.settings{background:#fff;padding:28px}.settings-heading{display:flex;align-items:center;gap:10px}.small-icon{background:#f3f5ef;border-radius:9px;padding:8px;color:#7e9176}h2{font-size:16px;font-weight:600;margin:0}.muted{font-size:11px;color:#8e968d;margin:12px 0 25px}label{display:block;font-size:11px;font-weight:600;margin:18px 0 9px}.rate-input{display:flex;align-items:center;background:#f8f9f5;border:1px solid #e5e9df;border-radius:9px;padding:12px;gap:8px}.rate-input input{width:100%;min-width:0;background:transparent;border:0;color:#304636;font-size:20px;font-weight:600;outline-offset:0}.rate-input>span{font-size:15px;color:#88947e}.rate-input>span:last-child{white-space:nowrap;font-size:11px}select{width:100%;padding:12px;border-radius:9px;border:1px solid #e5e9df;background:#f8f9f5;color:#586751;font-size:12px}.rate-summary{display:flex;justify-content:space-between;border-top:1px solid #ecede8;margin-top:22px;padding-top:19px;font-size:11px;color:#8a9484}.rate-summary strong{color:#526a43;font-size:14px}.settings-foot{font-size:10px;color:#9ba394;margin-top:15px}#error:empty{display:none}#error{font-size:11px;color:#a54835}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}.metric{padding:25px;display:flex;align-items:center;gap:18px;background:#fff;border:1px solid #e2e7dd;border-radius:14px}.metric-icon{background:#f2f5ed;color:#8eaa79;width:40px;height:40px;display:grid;place-items:center;border-radius:11px;font-size:23px}.metric p{margin:0 0 8px;font-size:11px;color:#8b9585}.metric strong{font-family:Manrope,sans-serif;font-size:22px;font-weight:600;letter-spacing:-.6px}.gentle-note{display:flex;justify-content:center;align-items:center;gap:14px;padding:34px 0;color:#92a481}.gentle-note>span{font-size:24px}.gentle-note p{font-size:12px;line-height:1.8;color:#6d8063}.gentle-note p span{font-size:11px;color:#9da595}footer{display:flex;justify-content:space-between;font-size:10px;color:#9ba494;border-top:1px solid #e2e6dd;padding:23px 0 28px}@media(max-width:750px){header{height:80px;padding:0 22px}.header-note{font-size:8px;letter-spacing:1px}main{padding:34px 20px 0}.intro{display:block}.date{display:block;padding-top:18px}h1{font-size:31px}.dashboard{grid-template-columns:1fr}.tracker{padding:24px 20px}.amount{font-size:64px}.metrics{gap:8px}.metric{padding:15px 10px;display:block}.metric-icon{margin-bottom:12px;width:30px;height:30px;font-size:19px}.metric strong{font-size:18px}.metric p{font-size:10px}footer{gap:20px;line-height:1.7}.subtitle{line-height:1.6}}@media(prefers-reduced-motion:no-preference){.status.running{animation:breathe 2s ease-in-out infinite}@keyframes breathe{50%{opacity:.6}}}
+</style><!-- end-inline-style --></head>
+<body>
+<header><a class="brand" href="/" aria-label="Payclock home"><span class="logo">◷</span> payclock<span class="brand-dot">.</span></a><span class="header-note">YOUR TIME. YOUR EARNINGS.</span></header>
+<main>
+<div class="intro"><div><p class="eyebrow">A LITTLE MOTIVATION FOR YOUR WORKDAY</p><h1>Make your time count.</h1><p class="subtitle">Watch your hard work turn into earnings, second by second.</p></div><span class="date" id="date"></span></div>
+<section class="dashboard">
+<div class="tracker card"><div class="tracker-top"><span class="eyebrow">THIS SESSION</span><span class="status" id="status">Ready when you are</span></div><div class="amount" id="amount" aria-label="Estimated earnings">$0.00</div><p class="amount-caption">Estimated earnings <span>·</span> before taxes</p><div class="timer"><span class="timer-dot"></span><span id="timer">00:00:00</span><span class="timer-label">time worked</span></div><div class="actions"><button id="toggle" class="primary">▶ <span>Start earning</span></button><button id="reset" class="secondary">Reset session</button></div><p class="saved-note" id="save-note">↳ Your session is saved automatically on this device.</p></div>
+<aside class="settings card"><div class="settings-heading"><span class="small-icon">⚙</span><h2>Your pay setup</h2></div><p class="muted">Set your rate. We’ll handle the counting.</p><label for="rate">Hourly rate</label><div class="rate-input"><span id="rate-symbol">$</span><input id="rate" type="number" min="0" max="1000000" step="0.01" value="25" inputmode="decimal"><span>/ hour</span></div><label for="currency">Currency</label><select id="currency"><option value="USD">USD — US Dollar</option><option value="EUR">EUR — Euro</option><option value="GBP">GBP — British Pound</option><option value="CAD">CAD — Canadian Dollar</option><option value="AUD">AUD — Australian Dollar</option><option value="INR">INR — Indian Rupee</option></select><p id="error" role="alert"></p><div class="rate-summary"><span>You earn every minute</span><strong id="per-minute">$0.42</strong></div><p class="settings-foot">Rate changes apply from that moment forward.</p></aside>
+</section>
+<section class="metrics" aria-label="Earnings at your current rate"><div class="metric"><span class="metric-icon">↗</span><div><p>Per second</p><strong id="per-second">$0.0069</strong></div></div><div class="metric"><span class="metric-icon">◷</span><div><p>Per hour</p><strong id="per-hour">$25.00</strong></div></div><div class="metric"><span class="metric-icon">☼</span><div><p>8-hour workday</p><strong id="per-day">$200.00</strong></div></div></section>
+<div class="gentle-note"><span>✦</span><p>Every second adds up.<br><span>Small moments. Real progress.</span></p></div>
+<footer><span>Built for a little more perspective.</span><span>Estimates only · No connection to payroll</span></footer>
+</main><!-- inline-app --><script>
+(() => {
+function elapsed(state, now = Date.now()) {
+  return state.elapsedMs + (state.startedAt === null ? 0 : Math.max(0, now - state.startedAt));
+}
+function earned(state, now = Date.now()) {
+  return state.earnedAmount + (state.startedAt === null ? 0 : Math.max(0, now - state.startedAt) * state.rate / 3600000);
+}
+function settle(state, now = Date.now()) {
+  return { ...state, elapsedMs: elapsed(state, now), earnedAmount: earned(state, now), startedAt: null };
+}
+
+const key = 'payclock-session-v1';
+const defaults = { rate: 25, currency: 'USD', startedAt: null, elapsedMs: 0, earnedAmount: 0 };
+let state = { ...defaults };
+try {
+  const saved = JSON.parse(localStorage.getItem(key));
+  if (saved && Number.isFinite(saved.rate) && saved.rate >= 0 && saved.rate <= 1000000 && Number.isFinite(saved.elapsedMs) && saved.elapsedMs >= 0 && Number.isFinite(saved.earnedAmount) && saved.earnedAmount >= 0 && (saved.startedAt === null || Number.isFinite(saved.startedAt)) && ['USD','EUR','GBP','CAD','AUD','INR'].includes(saved.currency)) state = saved;
+} catch {}
+const $ = id => document.getElementById(id);
+function save() {
+  try { localStorage.setItem(key, JSON.stringify(state)); }
+  catch { $('save-note').textContent = 'Storage unavailable. Keep this tab open to retain your session.'; }
+}
+function money(value, digits = 2) { return new Intl.NumberFormat(undefined, { style: 'currency', currency: state.currency, minimumFractionDigits: digits, maximumFractionDigits: digits }).format(value); }
+function render() {
+  $('amount').textContent = money(earned(state));
+  const seconds = Math.floor(elapsed(state) / 1000);
+  $('timer').textContent = [Math.floor(seconds / 3600), Math.floor(seconds / 60) % 60, seconds % 60].map(n => String(n).padStart(2, '0')).join(':');
+  const running = state.startedAt !== null;
+  $('status').textContent = running ? '● Earning live' : elapsed(state) > 0 ? 'Session paused' : 'Ready when you are';
+  $('status').classList.toggle('running', running);
+  $('toggle').textContent = running ? 'Ⅱ Pause session' : elapsed(state) > 0 ? '▶ Resume earning' : '▶ Start earning';
+  $('per-minute').textContent = money(state.rate / 60);
+  $('per-second').textContent = money(state.rate / 3600, 4);
+  $('per-hour').textContent = money(state.rate);
+  $('per-day').textContent = money(state.rate * 8);
+  $('rate-symbol').textContent = new Intl.NumberFormat(undefined, { style:'currency', currency:state.currency, currencyDisplay:'narrowSymbol' }).formatToParts(0).find(p => p.type === 'currency').value;
+}
+$('rate').value = state.rate;
+$('currency').value = state.currency;
+$('date').textContent = new Date().toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+$('toggle').addEventListener('click', () => {
+  if (!$('rate').checkValidity() || $('rate').value === '') { $('rate').reportValidity(); return; }
+  state = state.startedAt === null ? { ...state, startedAt: Date.now() } : settle(state);
+  save(); render();
+});
+$('reset').addEventListener('click', () => {
+  if (elapsed(state) > 0 && !confirm('Reset your session earnings and time worked? Your pay settings will stay saved.')) return;
+  state = { ...state, elapsedMs: 0, earnedAmount: 0, startedAt: null }; save(); render();
+});
+$('rate').addEventListener('change', () => {
+  if (!$('rate').checkValidity() || $('rate').value === '') { $('error').textContent = 'Enter a valid hourly rate between 0 and 1,000,000.'; return; }
+  $('error').textContent = '';
+  const running = state.startedAt !== null;
+  const now = Date.now();
+  state = { ...settle(state, now), rate: Number($('rate').value), startedAt: running ? now : null };
+  save(); render();
+});
+$('currency').addEventListener('change', () => {
+  if (elapsed(state) > 0 && !confirm('Changing currency resets this session. No exchange-rate conversion is applied. Continue?')) { $('currency').value = state.currency; return; }
+  state = { ...state, currency: $('currency').value, startedAt: null, elapsedMs: 0, earnedAmount: 0 }; save(); render();
+});
+render(); setInterval(render, 100);
+
+})();
+</script><!-- end-inline-app -->
+</body></html>

@@ -1,0 +1,11 @@
+import { readFile, writeFile } from 'node:fs/promises';
+const root = new URL('./', import.meta.url);
+const read = name => readFile(new URL(name, root), 'utf8');
+const css = await read('style.css');
+const helpers = (await read('earnings.js')).replaceAll('export function ', 'function ');
+const app = (await read('app.js')).replace(/^import .*;\n/, '');
+let html = await read('index.html');
+html = html.replace(/<link rel="stylesheet" href="\/style.css">|<!-- inline-style -->[\s\S]*?<!-- end-inline-style -->/, `<!-- inline-style --><style>${css}</style><!-- end-inline-style -->`);
+html = html.replace(/<script type="module" src="\/app.js"><\/script>|<!-- inline-app -->[\s\S]*?<!-- end-inline-app -->/, `<!-- inline-app --><script>\n(() => {\n${helpers}\n${app}\n})();\n</script><!-- end-inline-app -->`);
+await writeFile(new URL('index.html', root), html);
+console.log('Built self-contained index.html');
