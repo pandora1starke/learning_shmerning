@@ -1,3 +1,3 @@
-# Payclock watch test build 1.4
+# Payclock watch test build 1.5
 
-Saved 24-hour or 12-hour AM/PM selection for shift start and an optional small pay-rate label above tracker earnings. Includes color schemes and backdated shifts. Use adb install -r to preserve current preferences and session during the update. Debug-signed test APK, not a Play Store release.
+Shift end reminders for today or tomorrow using the saved 12/24-hour format. Allow notifications and Alarms & reminders access for timely alerts; without exact access Android may delay delivery. The reminder does not pause earnings. Choose Clear reminder to cancel it. Test delivery with the app closed on your watch. Use adb install -r to keep the session and preferences. Debug-signed test APK, not a Play Store release.
