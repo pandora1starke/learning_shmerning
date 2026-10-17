@@ -1,5 +1,5 @@
 # Payclock test downloads
 
-Install app v1.13 and face v1.4 together. Dedicated pay-rate complication (slot 15) fixes rate drawn outside old theme bounds. Full-face theme bounding box removes clipped rectangular background. Larger Earned (46px) and Worked (42px) counters. Only ⋯ opens the app.
+Face v1.5 uses fresh fixed counter slot IDs: left EarningsDataSource, right DurationDataSource. This discards older counter assignments without needing a Complications editor. Install over the existing face; app v1.13 remains compatible.
 
-Builds, lint, APK signatures, WFF v1 schema, and geometry checked. Actual-watch layout requires device verification. If the new rate slot is unassigned after updating, select Payclock pay rate in the face editor.
+Build, lint, WFF validation, signatures, and distinct provider assignment checks passed. Actual watch verification remains pending.
