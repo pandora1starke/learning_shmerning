@@ -1,3 +1,5 @@
-# Payclock test builds
+# Payclock test downloads
 
-Install companion app 1.9 and Payclock Face 1.2 with adb install -r, then reselect Payclock Face. The local clock is a top-level WFF element. Earnings use system-time dynamic text on supported Wear OS systems, with themed text and the existing automatic shift-end stop timeline. Rendering cadence and dynamic evaluation are controlled by Wear OS. Settings are grouped into Shift, Pay, Appearance and Alerts; Set shift end is in Shift. Builds, lint, WFF schema validation, live-expression tests and automatic-pause tests passed; device rendering/live ticking still need verification on the watch. Debug-signed test builds, not Play Store releases.
+App v1.10 fixes the premature Paused label for Time worked and refreshes complications when returning from the app. Compatible with watch face v1.2; no face reinstall needed.
+
+Build, lint, and shift-end tests passed. Actual watch rendering requires device verification.
