@@ -1,5 +1,5 @@
 # Payclock test downloads
 
-App v1.11: only the ⋯ complication opens the app from the face. Distinct settings launch action, activity reuse, menu page preservation, and no complication update during menu opening. Compatible with face v1.2; face reinstall unnecessary.
+Install app v1.12 and face v1.3 together. Show pay rate now controls a small rate line beneath the watch-face clock. Earned is on the left and Worked on the right. Only ⋯ opens the app. Existing slot IDs are preserved.
 
-Build and lint passed. Menu stability still requires actual-watch verification.
+Builds, lint, signatures, and WFF v1 schema validated. No executable dex in face APK. Actual-watch layout and toggle rendering require device verification.
