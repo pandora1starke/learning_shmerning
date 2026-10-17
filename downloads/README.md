@@ -1,5 +1,5 @@
 # Payclock test downloads
 
-App v1.10 fixes the premature Paused label for Time worked and refreshes complications when returning from the app. Compatible with watch face v1.2; no face reinstall needed.
+App v1.11: only the ⋯ complication opens the app from the face. Distinct settings launch action, activity reuse, menu page preservation, and no complication update during menu opening. Compatible with face v1.2; face reinstall unnecessary.
 
-Build, lint, and shift-end tests passed. Actual watch rendering requires device verification.
+Build and lint passed. Menu stability still requires actual-watch verification.
